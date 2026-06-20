@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bebek Goreng Pak Agus - Cita Rasa Legendaris</title>
   <meta name="description" content="Warung Bebek Goreng Pak Agus menyajikan hidangan bebek legendaris, jukut goreng, dan aneka menu pilihan. Pesan sekarang atau kunjungi kami!">
@@ -16,14 +16,14 @@
 
   <nav class="navbar" id="navbar">
     <div class="container nav-content">
-      <a href="#" class="logo">Pak Agus<span class="dot">.</span></a>
+      <a href="#" class="logo"><img src="/logo.svg" alt="Bebek Goreng Pak Agus" class="logo-img" /></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#beranda">Beranda</a></li>
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#kontak">Kontak</a></li>
       </ul>
-      <a href="https://wa.me/6289630900013" target="_blank" class="btn btn-primary nav-cta desktop-only">Pesan Sekarang</a>
+      <a href="https://wa.me/628122626277" target="_blank" class="btn btn-primary nav-cta desktop-only">Pesan Sekarang</a>
       <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,7 +33,7 @@
   <header id="beranda" class="hero">
     <div class="container hero-container">
       <div class="hero-content">
-        <div class="badge">#1 Bebek Goreng di Kota Rasa</div>
+        <div class="badge"><i data-lucide="award" style="width: 16px; height: 16px;"></i> #1 Bebek Goreng di Kota Rasa</div>
         <h1>Cita Rasa Bebek Goreng <span class="highlight">Legendaris</span></h1>
         <p>Nikmati perpaduan daging bebek yang lembut dengan bumbu rempah rahasia warisan keluarga Pak Agus. Digoreng kering, disajikan dengan sambal pedas mantap yang bikin nagih.</p>
         <div class="hero-buttons">
@@ -123,68 +123,86 @@
       <div class="menu-grid">
         <!-- Menu 1 -->
         <div class="menu-card">
-          <div class="menu-img-placeholder"><span class="placeholder-text">Foto Bebek Goreng</span></div>
+          <img src="/lele=goreng.png" alt="Lele Bakar / Goreng" class="menu-img" />
           <div class="menu-info">
             <div class="menu-title-row">
-              <h3>Bebek Goreng Spesial</h3>
-              <span class="price">Rp 35.000</span>
+              <h3>Lele Bakar / Goreng</h3>
+              <span class="price">Rp 15.000</span>
             </div>
-            <p>Daging bebek lembut digoreng kering dengan serundeng gurih.</p>
+            <p>Hidangan lele segar pilihan, disajikan bakar atau goreng krispi.</p>
+            <button class="btn btn-primary mt-4 w-100" onclick="pesanWhatsApp('Lele Bakar / Goreng', 'Rp 15.000')">
+              <i data-lucide="shopping-cart" style="width: 18px; height: 18px; margin-right: 8px;"></i> Pesan Sekarang
+            </button>
           </div>
         </div>
         <!-- Menu 2 -->
         <div class="menu-card">
-          <div class="menu-img-placeholder"><span class="placeholder-text">Foto Ayam Goreng</span></div>
+          <img src="/puyuh.png" alt="Ayam Bakar / Goreng" class="menu-img" />
           <div class="menu-info">
             <div class="menu-title-row">
-              <h3>Ayam Kampung Goreng</h3>
-              <span class="price">Rp 30.000</span>
+              <h3>Ayam Bakar / Goreng</h3>
+              <span class="price">Rp 25.000</span>
             </div>
-            <p>Alternatif lezat dengan ayam kampung pilihan dan bumbu meresap.</p>
+            <p>Ayam bumbu meresap sempurna, tersedia varian bakar manis atau goreng gurih.</p>
+            <button class="btn btn-primary mt-4 w-100" onclick="pesanWhatsApp('Ayam Bakar / Goreng', 'Rp 25.000')">
+              <i data-lucide="shopping-cart" style="width: 18px; height: 18px; margin-right: 8px;"></i> Pesan Sekarang
+            </button>
           </div>
         </div>
         <!-- Menu 3 -->
         <div class="menu-card">
-          <div class="menu-img-placeholder"><span class="placeholder-text">Foto Jukut Goreng</span></div>
+          <img src="/bebek-goreng.png" alt="Bebek Bakar / Goreng" class="menu-img" />
           <div class="menu-info">
             <div class="menu-title-row">
-              <h3>Jukut Goreng Krispi</h3>
-              <span class="price">Rp 10.000</span>
+              <h3>Bebek Bakar / Goreng</h3>
+              <span class="price">Rp 35.000</span>
             </div>
-            <p>Kol goreng renyah yang sangat cocok disantap dengan sambal dan nasi hangat.</p>
+            <p>Menu legendaris dengan daging bebek lembut, disajikan bakar atau goreng.</p>
+            <button class="btn btn-primary mt-4 w-100" onclick="pesanWhatsApp('Bebek Bakar / Goreng', 'Rp 35.000')">
+              <i data-lucide="shopping-cart" style="width: 18px; height: 18px; margin-right: 8px;"></i> Pesan Sekarang
+            </button>
           </div>
         </div>
         <!-- Menu 4 -->
         <div class="menu-card">
-          <div class="menu-img-placeholder"><span class="placeholder-text">Foto Sambal Spesial</span></div>
+          <img src="/puyuh.png" alt="Puyuh Bakar / Goreng" class="menu-img" />
           <div class="menu-info">
             <div class="menu-title-row">
-              <h3>Ekstra Sambal Spesial</h3>
-              <span class="price">Rp 5.000</span>
+              <h3>Puyuh Bakar / Goreng</h3>
+              <span class="price">Rp 25.000</span>
             </div>
-            <p>Sambal bawang dan terasi pedas nendang, diulek segar setiap pesanan.</p>
+            <p>Burung puyuh empuk dengan bumbu rempah pilihan, pas untuk selera Anda.</p>
+            <button class="btn btn-primary mt-4 w-100" onclick="pesanWhatsApp('Puyuh Bakar / Goreng', 'Rp 25.000')">
+              <i data-lucide="shopping-cart" style="width: 18px; height: 18px; margin-right: 8px;"></i> Pesan Sekarang
+            </button>
           </div>
         </div>
         <!-- Menu 5 -->
         <div class="menu-card">
-          <div class="menu-img-placeholder"><span class="placeholder-text">Foto Bebek Hidup/Mentah</span></div>
+          <img src="/teh.webp" alt="Es Teh / Teh Anget" class="menu-img" />
           <div class="menu-info">
             <div class="menu-title-row">
-              <h3>Bebek Mentah / Hidup</h3>
-              <span class="price">Grosir</span>
+              <h3>Es Teh / Teh Anget</h3>
+              <span class="price">Rp 4.000</span>
             </div>
-            <p>Menyediakan bebek segar berkualitas untuk kebutuhan grosir / acara besar Anda.</p>
+            <p>Teh wangi dengan manis yang pas, tersedia pilihan es atau hangat.</p>
+            <button class="btn btn-primary mt-4 w-100" onclick="pesanWhatsApp('Es Teh / Teh Anget', 'Rp 4.000')">
+              <i data-lucide="shopping-cart" style="width: 18px; height: 18px; margin-right: 8px;"></i> Pesan Sekarang
+            </button>
           </div>
         </div>
         <!-- Menu 6 -->
         <div class="menu-card">
-          <div class="menu-img-placeholder"><span class="placeholder-text">Foto Es Teh Manis</span></div>
+          <img src="/esjeruk.jpeg" alt="Es Jeruk / Jeruk Anget" class="menu-img" />
           <div class="menu-info">
             <div class="menu-title-row">
-              <h3>Es Teh / Jeruk Segar</h3>
+              <h3>Es Jeruk / Jeruk Anget</h3>
               <span class="price">Rp 5.000</span>
             </div>
-            <p>Pelepas dahaga sempurna dengan manis alami setelah menyantap hidangan gurih.</p>
+            <p>Minuman jeruk segar alami yang kaya vitamin, tersedia es atau hangat.</p>
+            <button class="btn btn-primary mt-4 w-100" onclick="pesanWhatsApp('Es Jeruk / Jeruk Anget', 'Rp 5.000')">
+              <i data-lucide="shopping-cart" style="width: 18px; height: 18px; margin-right: 8px;"></i> Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
@@ -194,7 +212,7 @@
   <footer id="kontak" class="footer">
     <div class="container footer-container">
       <div class="footer-info">
-        <h2>Pak Agus<span class="dot">.</span></h2>
+        <img src="/logo.svg" alt="Bebek Goreng Pak Agus" class="footer-logo-img" />
         <p>Cita rasa legendaris yang selalu bikin kangen. Datang bersama keluarga dan teman untuk merasakan kenikmatan sejati bebek goreng.</p>
         <div class="contact-details">
           <div class="contact-item">
@@ -203,14 +221,14 @@
           </div>
           <div class="contact-item">
             <i data-lucide="phone" class="icon-lucide"></i>
-            <p>+62 896-3090-0013</p>
+            <p>+62 812-2626-277</p>
           </div>
           <div class="contact-item">
             <i data-lucide="clock" class="icon-lucide"></i>
             <p>Buka Tiap Hari: 10:00 - 22:00 WIB</p>
           </div>
         </div>
-        <a href="https://wa.me/6289630900013" target="_blank" class="btn btn-primary mt-4 desktop-only">Hubungi via WhatsApp</a>
+        <a href="https://wa.me/628122626277" target="_blank" class="btn btn-primary mt-4 desktop-only">Hubungi via WhatsApp</a>
       </div>
       <div class="footer-map">
         <div class="map-wrapper">
@@ -235,7 +253,7 @@
 
   <!-- Floating Mobile CTA -->
   <div class="mobile-bottom-bar">
-    <a href="https://wa.me/6289630900013" target="_blank" class="btn btn-primary w-100 mobile-cta-btn">
+    <a href="https://wa.me/628122626277" target="_blank" class="btn btn-primary w-100 mobile-cta-btn">
       <i data-lucide="message-circle" style="width: 20px; height: 20px; margin-right: 8px;"></i> Pesan Sekarang
     </a>
   </div>

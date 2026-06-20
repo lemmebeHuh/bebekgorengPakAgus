@@ -6,6 +6,14 @@ lucide.createIcons();
 // Update current year in footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+// WhatsApp order function
+window.pesanWhatsApp = function(namaMenu, harga) {
+  const noWA = "628122626277";
+  const pesan = `Halo Bebek Pak Agus, saya ingin memesan:\n\nMenu: ${namaMenu}\nHarga: ${harga}\n\nMohon info selanjutnya. Terima kasih!`;
+  const urlWA = `https://wa.me/${noWA}?text=${encodeURIComponent(pesan)}`;
+  window.open(urlWA, '_blank');
+};
+
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
